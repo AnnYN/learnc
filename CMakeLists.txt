@@ -41,3 +41,6 @@ add_executable(funcptr funcptr.c)
 add_executable(array array.c)
 
 add_executable(ptrdemo ptrdemo.cpp)
+add_executable(test test.c)
+
+
