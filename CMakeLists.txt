@@ -3,7 +3,7 @@ project(cmake_clion)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(1 1.c)
+add_executable(1 1.c 2dMat.c)
 add_executable(2 2.c foo.h foo.c)
 
 add_executable(hahaha loop.c)
