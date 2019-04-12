@@ -12,9 +12,9 @@ int main(){
 
 
     printf("Enter elements of matrix A: \n");
-    for(r=0;r<ra-1;r++){
+    for(r=0;r<ra;r++){
 
-        for(c=0;c<ca-1;c++){
+        for(c=0;c<ca;c++){
             scanf("%d",&a[r][c]);
         }
 
@@ -24,29 +24,28 @@ int main(){
 
 
     printf("Enter elements of matrix B: \n");
-    for(r=0;r<rb-1;r++){
+    for(r=0;r<rb;r++){
 
-        for(c=0;c<cb-1;c++){
+        for(c=0;c<cb;c++){
             scanf("%d",&b[r][c]);
         }
 
 
     }
 
+    printf("Element of mul matrix:\n");
     if(ca==rb){
-        for(r=0;r<ra-1;r++){
+        for(r=0;r<ra;r++){
             for(c=0;c<cb;c++){
-                for(k=0;k<ca-1;k++){
-                 mul[r][c] += a[r][k]*b[k][c];
+                for(k=0;k<ca;k++){
+
+                 mul[r][c] = mul[r][c] + a[r][k]*b[k][c];
                 }
 
             printf("%d ",mul[r][c]);
             }
             printf("\n");
         }
-
-
-
 
     }
 
