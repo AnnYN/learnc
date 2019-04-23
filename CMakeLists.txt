@@ -3,7 +3,7 @@ project(cmake_clion)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(1 1.c 2dMat.c mul.c fileheading.c lamda.cpp)
+add_executable(1 1.c 2dMat.c mul.c fileheading.c lamda.cpp signal.c twocall.c mywait.c dm3_signal.c)
 add_executable(2 2.c foo.h foo.c)
 
 add_executable(hahaha loop.c)
