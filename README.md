@@ -1,57 +1,15 @@
-```bash
-$ ls
-1.c   2.c   foo.c foo.h
+
+###prepend file
+
+```
+echo text| cat myfile > file1.txt && rm myfile
 ```
 
-```bash
-$ cc 1.c
-$ ls
-1.c   2.c   a.out foo.c foo.h
+```
+echo -e "DATA-line-1\nDATA-Line-2\n$(cat file1.txt)" > file1.txt
 ```
 
-```bash
-$ ./a.out
-a1
+### use sed command "
 ```
-
-```bash
-$ mv a.out 1.out
-$ ls
-1.c   1.out 2.c   foo.c foo.h
-$ ./1.out
-a1
+sed -i 'ls;^;DATA_Line-1\m;' file1.txt
 ```
-
-```bash
-$ cc 2.c foo.c foo.h
-```
-
-```bash
-$ ls
-1.c       2.c       a.out     foo.c     foo.h     foo.h.gch
-```
-
-```bash
-$ ./a.out
-Hello, world!
-```
-
-```bash
-$ mv a.out 2.out
-```
-
-```bash
-$ ls
-1.c       2.c       2.out     foo.c     foo.h     foo.h.gch
-```
-
-```bash
-$ ./2.out
-Hello, world!
-```
-
----
-
-9/5 : memleak  malloc   calloc realloc  free 
-
-
