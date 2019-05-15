@@ -42,6 +42,7 @@ add_executable(array array.c)
 
 add_executable(ptrdemo ptrdemo.cpp)
 add_executable(test test.c)
+add_executable(demo3 threadCPP/demo3.cpp)
 
 
 
